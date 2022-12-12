@@ -1,0 +1,12 @@
+.pet-list-item {
+  border: 1px solid #00ff00;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  &:hover, &.selected {
+    background-color: #ff33cc;
+    color: white;
+  }
+}

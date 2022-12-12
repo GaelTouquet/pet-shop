@@ -1,0 +1,16 @@
+<div class="add-pet">
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Nom" formControlName="name" />
+    <select formControlName="species">
+      <option>chien</option>
+      <option>chat</option>
+      <option>poisson</option>
+      <option>lapin</option>
+    </select>
+    <input type="number" placeholder="Prix" formControlName="price" />
+    <div>disponible<input type="checkbox" name="disponible" checked /></div>
+    <input type="text" placeholder="URL image" formControlName="imageUrl" />
+    <button [disabled]="!formGroup.valid">Soumettre</button>
+    <!-- par défault un button dans un form fait un submit -->
+  </form>
+</div>
